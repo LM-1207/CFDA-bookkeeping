@@ -14,7 +14,7 @@
   "Project": {
     "Brief history of your project and organization": "HaploX is a leading provider of genetic testing solutions, specializing in gene sequencing, liquid biopsies, bioinformatics, and big data analytics. Our laboratories meet the highest global standards, with CAP, CLIA, and EMQN accreditations.  \nWe offer a wide range of genetic tests across different populations, tumor types, and disease stages, providing results that support cancer diagnostics, health screening, risk assessment, and pathogen testing.",
     "Is this project associated with other projects/ecosystem stakeholders?": "No",
-    "Describe the data being stored onto Filecoin": "Medical data\nGenetic data\nR&D data\nWe have our own IDC, where our data is stored, totaling over 5 PiB.",
+    "Describe the data being stored onto Filecoin": "Medical data\nGenetic data\nGene sequencing, liquid biopsy, life information\nWe have our own IDC （Tecent Cloud Storage）, where our data is stored, totaling over 5 PiB.",
     "Where was the data currently stored in this dataset sourced from": "My Own Storage Infra",
     "How do you plan to prepare the dataset": "We generate and send cars and related orders based on this document:\nhttps://github.com/tech-greedy/singularity/blob/main/getting-started.md.  https://boost.filecoin.io/storing-data-on-filecoin",
     "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "Data case\n\nhttp://120.71.76.118:19000\n\nuser： haplox   \npassword： haplox@123",
