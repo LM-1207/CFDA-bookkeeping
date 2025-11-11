@@ -1,0 +1,49 @@
+{
+  "Version": "1.3",
+  "ID": "f1pbdexc4axprdt46jt23zbam7vt3ghvssfirgvma",
+  "Issue Number": "11",
+  "Client": {
+    "Name": "Met Office Gov UK",
+    "Region": "United Kingdom",
+    "Industry": "Environment",
+    "Website": "https://www.metoffice.gov.uk/services/data/external-data-channels",
+    "Social Media": "https://www.metoffice.gov.uk/",
+    "Social Media Type": "Other",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Brief history of your project and organization": "The flagship Numerical Weather Prediction model developed and used at the Met Office, is the Unified Model, the same model is used for both weather and climate prediction. For weather forecasting the Met Office runs several configurations of the Unified Model as part of its operational Numerical Weather Prediction suite. Uncovering 2 years' worth of historical data, updated regularly with a time delay. The UK deterministic model is a post processed regional downscaled configuration of the Unified Model, covering the UK and Ireland, with a resolution of approximately 0.018 degrees. The United Kingdom domain is a 1,096km x 1,408km (2km resolution grid). Formatted via NetCDF. Please note this is a public beta and therefore a non-operational service.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "https://registry.opendata.aws/met-office-uk-deterministic/\n\naws s3 ls --no-sign-request s3://met-office-atmospheric-model-data/   621.2 TiB\n\nThe Met Office's UK Deterministic (UKV) 2 km dataset, part of the Amazon Sustainability Data Initiative (ASDI), offers a rolling two-year archive of historical weather forecast data derived from the Unified Model's numerical weather prediction system. This public beta service provides post-processed, regional downscaled outputs covering the UK and Ireland at approximately 2 km resolution, encompassing variables such as air temperature, near-surface relative humidity, and other atmospheric parameters in NetCDF format. Hosted openly on AWS S3 (bucket: s3://met-office-atmospheric-model-data/, region: eu-west-2) with no access restrictions, the archive totals around 621.2 TiB and supports seamless retrieval via commands like aws s3 ls --no-sign-request s3://met-office-atmospheric-model-data/. Updates occur regularly, featuring hourly forecasts up to T+48 hours (issued eight times daily) and three-hourly extensions to T+120 hours, fostering free and unrestricted use for research and applications under a Creative Commons BY-SA licence. For further details on Met Office external data channels, including integrations with platforms like Snowflake and Esri UK",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "1.Download data from AWS S3 (s3://met-office-atmospheric-model-data/) and transfer it to the data centre.  \n2.Use go-graphsplit to divide the retrieved files into separate CAR files.  \n3.Deliver the CAR files to the SPs by means of physical hard drive shipment or HTTP download.",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "https://registry.opendata.aws/met-office-uk-deterministic/\n\naws s3 ls --no-sign-request s3://met-office-atmospheric-model-data/\n\nhttps://met-office-atmospheric-model-data.s3.eu-west-2.amazonaws.com/index.html",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[x] I confirm",
+    "What is the expected retrieval frequency for this data": "Yearly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1 to 1.5 years",
+    "In which geographies do you plan on making storage deals": "Asia other than Greater China, North America, Greater China",
+    "How will you be distributing your data to storage providers": "HTTP or FTP server, Shipping hard drives",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "f02827565  Vietnam  \nf02826715  United States  \nf02825420  Taiwan  \nf03663680  Hong Kong  \nf03663684  Hong Kong",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "3.1PiB",
+    "Single Size Dataset": "621.2TiB",
+    "Replicas": 5,
+    "Weekly Allocation": "1.5PiB"
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2025-11-11 14:20:59.178198025 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1pbdexc4axprdt46jt23zbam7vt3ghvssfirgvma",
+    "Multisig Address": "false",
+    "edited": false
+  },
+  "Allocation Requests": []
+}
