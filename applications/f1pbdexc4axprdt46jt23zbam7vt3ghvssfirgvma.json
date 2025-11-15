@@ -37,11 +37,11 @@
   },
   "Lifecycle": {
     "State": "Granted",
-    "Validated At": "2025-11-15 01:39:12.283378331 UTC",
+    "Validated At": "2025-11-15 16:49:10.088665633 UTC",
     "Validated By": "LM-1207",
     "Active": true,
-    "Updated At": "2025-11-15 01:39:12.283373829 UTC",
-    "Active Request ID": "c362d30e-c3c9-4cce-8531-5c81dc80eb96",
+    "Updated At": "2025-11-15 16:49:10.088664708 UTC",
+    "Active Request ID": "aca983fd-18db-4b1d-a84f-0ff36ef3a725",
     "On Chain Address": "f1pbdexc4axprdt46jt23zbam7vt3ghvssfirgvma",
     "Multisig Address": "false",
     "edited": false
@@ -128,6 +128,31 @@
               "2825420",
               "3663680",
               "3663684"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ID": "bab64071-7cdc-4b7f-bf5a-236721279020",
+      "Created At": "2025-11-15 16:49:10.088641864 UTC",
+      "Updated At": "2025-11-15 16:49:10.088647657 UTC",
+      "Active": false,
+      "Allowed Storage Providers": [
+        2827565,
+        2826715,
+        2825420,
+        3663680,
+        3663684,
+        3624256
+      ],
+      "Signers": [
+        {
+          "Github Username": "LM-1207",
+          "Signing Address": "f1pier3w5cqifij5jsldstei56tx3uz2cfjwxp54q",
+          "Add Allowed Storage Providers CID": {
+            "bafy2bzacebgpd56more6vvn7p22mvj5ln5csqhqnieaw2xpwc7h4k6qrmqz5y": [
+              "3624256"
             ]
           }
         }
