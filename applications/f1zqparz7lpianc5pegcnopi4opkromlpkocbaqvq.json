@@ -1,0 +1,49 @@
+{
+  "Version": "1.3",
+  "ID": "f1zqparz7lpianc5pegcnopi4opkromlpkocbaqvq",
+  "Issue Number": "23",
+  "Client": {
+    "Name": "Riley Hales",
+    "Region": "United States",
+    "Industry": "Environment",
+    "Website": "https://training.geoglows.org/rfs/datasets/catalog/",
+    "Social Media": "https://www.hales.app/",
+    "Social Media Type": "Other",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Brief history of your project and organization": "The GEOGLOWS (Global Earth Observations Global Water Sustainability) initiative is a collaborative effort aimed at improving global water sustainability through advanced hydrological forecasting and data analysis. Leveraging the power of Earth observations, numerical weather predictions, and supercomputing, GEOGLOWS provides actionable information through our hydrologic model, the River Forecast System (RFS). RFS provides streamflow time series data for over 6 million river segments worldwide. By making decades of historical climatological flow data and future forecasts easily accessible, RFS supports informed decision-making in water resource management, disaster risk reduction, and climate adaptation. This global service enables countries and organizations to enhance their understanding of water-related challenges and implement effective solutions, ultimately contributing to a more sustainable and resilient future.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "The data are stored in 2 buckets. The first holds the model configuration files, gis data, retrospective simulation data, and other data which are essentially static. The second bucket holds the daily forecasts produced by RFS.\n\nForecasts: http://geoglows-v2-forecasts.s3-website-us-west-2.amazonaws.com/index.html\nGIS + Retro: http://geoglows-v2.s3-website-us-west-2.amazonaws.com/index.html\ns3://geoglows-v2-forecasts/  \ns3://geoglows-v2/hydrography/  \ns3://geoglows-v2/hydrography-global/  \ns3://geoglows-v2/tables/  \ns3://geoglows-v2/retrospective/hourly.zarr  \ns3://geoglows-v2/retrospective/daily.zarr  \ns3://geoglows-v2/retrospective/monthly-timeseries.zarr  \ns3://geoglows-v2/retrospective/yearly-timeseries.zarr  \ns3://geoglows-v2/retrospective/yearly-maximums.zarr  \ns3://geoglows-v2/retrospective/return-periods.zarr  \ns3://geoglows-v2/retrospective/fdc.zarr",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "First, we download the original files from AWS, split them into directories of approximately 25-30 GB each, package them into CAR files, and then distribute them to SP sealers via hard drives.",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "aws s3 ls --no-sign-request s3://geoglows-v2-forecasts/",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[x] I confirm",
+    "What is the expected retrieval frequency for this data": "Yearly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1 to 1.5 years",
+    "In which geographies do you plan on making storage deals": "Asia other than Greater China, North America",
+    "How will you be distributing your data to storage providers": "Shipping hard drives",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "f02827565  Vietnam  \nf02826715  United States  \nf02825420  Taiwan  \nf02827377  Taiwan  \nf02827448  Vietnam\nf03663680  Hong Kong  \nf03663684  Hong Kong",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "1PiB",
+    "Single Size Dataset": "150TiB",
+    "Replicas": 7,
+    "Weekly Allocation": "1PiB"
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2025-12-26 10:04:55.535860218 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1zqparz7lpianc5pegcnopi4opkromlpkocbaqvq",
+    "Multisig Address": "false",
+    "edited": false
+  },
+  "Allocation Requests": []
+}
