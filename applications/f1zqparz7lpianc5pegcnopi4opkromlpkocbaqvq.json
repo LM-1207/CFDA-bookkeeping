@@ -2,6 +2,7 @@
   "Version": "1.3",
   "ID": "f1zqparz7lpianc5pegcnopi4opkromlpkocbaqvq",
   "Issue Number": "23",
+  "Client Contract Address": "f410fjjdwlspmvltmkqemkbeyiodrwjm5eimunh625vy",
   "Client": {
     "Name": "Riley Hales",
     "Region": "United States",
@@ -35,15 +36,25 @@
     "Weekly Allocation": "1PiB"
   },
   "Lifecycle": {
-    "State": "KYCRequested",
-    "Validated At": "",
-    "Validated By": "",
+    "State": "ReadyToSign",
+    "Validated At": "2025-12-27 08:00:36.844357167 UTC",
+    "Validated By": "LM-1207",
     "Active": true,
-    "Updated At": "2025-12-27 04:54:27.903837724 UTC",
-    "Active Request ID": "",
+    "Updated At": "2025-12-27 08:00:36.844361755 UTC",
+    "Active Request ID": "483f826d-1b72-4d30-8002-5ebe84d8c151",
     "On Chain Address": "f1zqparz7lpianc5pegcnopi4opkromlpkocbaqvq",
     "Multisig Address": "false",
     "edited": false
   },
-  "Allocation Requests": []
+  "Allocation Requests": [
+    {
+      "ID": "483f826d-1b72-4d30-8002-5ebe84d8c151",
+      "Request Type": "First",
+      "Created At": "2025-12-27 08:00:36.844364589 UTC",
+      "Updated At": "2025-12-27 08:00:36.844365769 UTC",
+      "Active": true,
+      "Allocation Amount": "32985348833280 B",
+      "Signers": []
+    }
+  ]
 }
